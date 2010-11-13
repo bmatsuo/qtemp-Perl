@@ -1,7 +1,7 @@
 PACKAGE=qtemp-Perl
 VERSION=0.01
 
-SOURCE=templates subs docs
+SOURCE=templates #subs docs
 TAR_NAME=${PACKAGE}-${VERSION}.tgz
 TAR_PATH=dist/${TAR_NAME}
 
@@ -14,4 +14,5 @@ all:
 
 tar:
 	echo "Creating archive..."
+	-@mkdir dist
 	tar cvzf ${TAR_PATH} ${SOURCE}

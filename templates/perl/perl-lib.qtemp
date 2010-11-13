@@ -1,0 +1,44 @@
+LIBNAME="$(echo '$FILE' | sed 's/\.pm$$//')"
+!!
+#!/usr/bin/env perl
+# Use perldoc or option --man to read documentation
+package $LIBNAME
+
+use strict;
+use warnings;
+use Carp;
+
+our $$VERSION = "0.0_1";
+
+return 1;
+
+__END__
+
+=head1 NAME
+
+$LIBNAME - $?desc?{$desc}{PUT A SHORT DESCRIPTION HERE!}
+
+=head1 VERSION
+
+Version 0.0_1
+
+Originally created on $DATE
+
+=head1 DESCRIPTION
+
+$?desc?{$desc}
+
+=head1 AUTHOR
+
+$AUTHOR
+
+=head1 BUGS
+
+=over
+
+=back
+
+=head1 COPYRIGHT & LICENCE
+
+(c) $AUTHOR
+!!

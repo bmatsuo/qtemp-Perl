@@ -1,0 +1,12 @@
+### $?class?{CLASS METHOD}{$?instance?{INSTANCE METHOD}{$?interface?{INTERFACE SUB}{$?internal?{INTERNAL UTILITY}{CLASS METHOD/INSTANCE METHOD/INTERFACE SUB/INTERNAL UTILITY}}}}
+# Subroutine: $name
+# Usage: $?class?{$class->}{$?instance?{$$self->}}$name( $?args?{$args} )
+# Purpose: $?desc?{$desc}
+# Returns: Nothing
+# Throws: Nothing
+sub $name {
+    $?class?{my $$class = shift;
+    }{$?instance?{my $$self = shift;
+    }}my ($?args?{$args}) = @_;
+    return;
+}

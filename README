@@ -1,0 +1,31 @@
+qtemp-Perl                                                    Version 0.01
+==========================================================================
+
+qtemp-Perl - qtemp templates for assintance writing Perl.
+
+SYNOPSIS
+
+qtemp perl -o new-script
+
+qtemp perl-lib -o NewLibrary.pm
+
+qtemp perl-sub -d name=new_sub -d instance
+
+qtemp perl-exporter
+
+INSTALLATION
+
+Download the latest release ('qtemp-Perl-0.01.tar.gz'), navigate to the
+download directory and install it with the command.
+    tar xvzf qtemp-Perl-0.01.tar.gz -o ~/.qtemp/
+
+TIPS
+
+The perl-sub and perl-exporter templates are most useful in a text editor
+like 'vim' which allows piping of shell commands. 'qtemp' can be piped in
+from vim by pressing '!' when in visual select mode.
+
+MORE INFO
+
+For more information about qtemp, 
+    see its github page (https://github.com/bmatsuo/qtemp)

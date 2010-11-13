@@ -23,7 +23,7 @@ TIPS
 
 The perl-sub and perl-exporter templates are most useful in a text editor
 like 'vim' which allows piping of shell commands. 'qtemp' can be piped in
-from vim by pressing '!' when in visual select mode.
+to vim by pressing '!' when in visual select mode.
 
 MORE INFO
 

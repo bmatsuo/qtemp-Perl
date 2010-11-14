@@ -1,7 +1,6 @@
 require Exporter;
 use AutoLoader qw(AUTOLOAD);
-our @ISA; 
-push @ISA, 'Exporter';
+push our @ISA, 'Exporter';
 
 # If you do not need this, 
 #   moving things directly into @EXPORT or @EXPORT_OK will save memory.

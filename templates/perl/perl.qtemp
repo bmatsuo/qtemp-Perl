@@ -22,9 +22,9 @@ use Getopt::Euclid qw{ :vars<opt_> };
 ########################################################################
 
 # Basic program information.
-my $$prog_incantation  => $$0;
-my $$prog_dir          => dirname($$0);
-my $$prog_name         => basename($$0);
+my $$prog_incantation  = $$0;
+my $$prog_dir          = dirname($$0);
+my $$prog_name         = basename($$0);
 
 # Command-line option hash.
 my %opt = %ARGV;
@@ -64,7 +64,7 @@ $FILE
 
 =head1 VERSION
 
-Version 0.0_1
+Version 00.00_01
 
 =head1 USAGE
 

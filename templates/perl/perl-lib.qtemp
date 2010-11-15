@@ -4,7 +4,7 @@ LIBNAME="$(echo '$FILE' | sed 's/\.pm$$//')"
 # Use perldoc or option --man to read documentation
 package $LIBNAME
 
-our $$VERSION = "0.0_1";
+our $$VERSION = "00.00_01";
 # Originally created on $DATE
 
 use strict;
@@ -21,7 +21,7 @@ $LIBNAME - $?desc?{$desc}{PUT A SHORT DESCRIPTION HERE!}
 
 =head1 VERSION
 
-Version 0.0_1
+Version 00.00_01
 
 =head1 DESCRIPTION
 

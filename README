@@ -15,9 +15,11 @@ qtemp perl-exporter
 
 INSTALLATION
 
-Download the latest release ('qtemp-Perl-0.01.tar.gz'), navigate to the
-download directory and install it with the command.
-    tar xvzf qtemp-Perl-0.01.tar.gz -o ~/.qtemp/
+Just time the command
+
+    make install
+
+and you're done.
 
 TIPS
 

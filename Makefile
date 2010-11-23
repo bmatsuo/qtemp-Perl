@@ -1,5 +1,5 @@
 PACKAGE=qtemp-Perl
-VERSION=0.01
+VERSION=0.02
 
 SOURCE=templates #subs docs
 TAR_NAME=${PACKAGE}-${VERSION}.tgz
@@ -16,3 +16,6 @@ tar:
 	echo "Creating archive..."
 	-@mkdir dist
 	tar cvzf ${TAR_PATH} ${SOURCE}
+
+install:
+	cp ${TAR_PATH} ~/.qtemp/ && cd ~/.qtemp && tar xvzf ${TAR_NAME} && rm ${TAR_NAME}

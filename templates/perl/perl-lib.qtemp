@@ -1,18 +1,16 @@
-LIBNAME="$(echo '$FILE' | sed 's/\.pm$$//')"
+LIBNAME="$(echo '$FILE' | sed 's!\.pm$$!!' | sed 's!/!::!')"
 !!
 #!/usr/bin/env perl
 # Use perldoc or option --man to read documentation
-package $LIBNAME
+package $LIBNAME;
 
 our $$VERSION = "00.00_01";
 # Originally created on $DATE
 
 use strict;
 use warnings;
-use Carp;
 
 return 1;
-
 __END__
 
 =head1 NAME

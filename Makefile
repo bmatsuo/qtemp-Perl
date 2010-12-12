@@ -1,5 +1,5 @@
 PACKAGE=qtemp-Perl
-VERSION=0.02
+VERSION=0.03
 
 SOURCE=templates #subs docs
 TAR_NAME=${PACKAGE}-${VERSION}.tgz

@@ -1,4 +1,4 @@
-LIBNAME="$(echo '$FILE' | sed 's!\.pm$$!!' | sed -E 's!^(.*[^/]*/)?lib/!!' | sed 's!/!::!g')"
+LIBNAME="$(echo '$FILE' | sed 's!\.pm$$!!' | sed -E 's!^\(.*[^/]*/\)?lib/!!' | sed 's!/!::!g')"
 !!
 #!/usr/bin/env perl
 # Use perldoc or option --man to read documentation

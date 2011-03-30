@@ -7,7 +7,7 @@ LIBNAME="$(echo '$FILE' | sed 's!\.pm$$!!' | sed -E 's!^\(.*[^/]*/\)?lib/!!' | s
 package $LIBNAME;
 use strict;
 use warnings;
-use vars qw{@ISA %EXPORT_TAGS @EXPORT_OK @EXPORT $VERSION};
+use vars qw{@ISA %EXPORT_TAGS @EXPORT_OK @EXPORT $$VERSION};
 =head1 Name
 
 $LIBNAME - $?desc?{$desc}{PUT A SHORT DESCRIPTION HERE!}

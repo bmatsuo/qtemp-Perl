@@ -1,9 +1,20 @@
-### $?class?{CLASS METHOD}{$?instance?{INSTANCE METHOD}{$?interface?{INTERFACE SUB}{$?internal?{INTERNAL UTILITY}{CLASS METHOD/INSTANCE METHOD/INTERFACE SUB/INTERNAL UTILITY}}}}
+$?pod?{=item $name
+
+    $?class?{$class->}{$?instance?{$instance->}}$name( $?args?{$args });
+
+Purpose: $?desc?{$desc}
+Preconditions: None
+Postconditions: None
+Returns: Nothing
+Throws: Nothing
+=cut}{### $?class?{CLASS METHOD}{$?instance?{INSTANCE METHOD}{$?interface?{INTERFACE SUB}{$?internal?{INTERNAL UTILITY}{CLASS METHOD/INSTANCE METHOD/INTERFACE SUB/INTERNAL UTILITY}}}}
 # Subroutine: $name
-# Usage: $?class?{$class->}{$?instance?{$instance->}}$name( $?args?{$args} )
+# Usage: $?class?{$class->}{$?instance?{$instance->}}$name( $?args?{$args })
 # Purpose: $?desc?{$desc}
+# Precoditions: None
+# Postconditions: none
 # Returns: Nothing
-# Throws: Nothing
+# Throws: Nothing}
 sub $name {
     $?class?{my $$class = shift;
     }{$?instance?{my $$self = shift;

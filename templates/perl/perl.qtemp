@@ -1,13 +1,11 @@
 #!/usr/bin/env perl
-# Use perldoc or option --man to read documentation
-###################################################
-
-our $$VERSION = "00.00_01";
+use strict;
+use warnings;
+use version 0.77;
+our $$VERSION = qv("00.00_01");
 # Originally created: $DATE.
 
 # Include core modules.
-use strict;
-use warnings;
 use File::Basename;
 use Carp;
 

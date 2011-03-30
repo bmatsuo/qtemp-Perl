@@ -1,41 +1,96 @@
 LIBNAME="$(echo '$FILE' | sed 's!\.pm$$!!' | sed -E 's!^\(.*[^/]*/\)?lib/!!' | sed 's!/!::!g')"
 !!
 #!/usr/bin/env perl
-# Use perldoc or option --man to read documentation
+##########################################################################
+# BEGIN PACKAGE ($LIBNAME)
+##########################################################################
 package $LIBNAME;
-
-our $$VERSION = "00.00_01";
-# Originally created on $DATE
-
 use strict;
 use warnings;
-
-return 1;
-__END__
-
-=head1 NAME
+use vars qw{@ISA %EXPORT_TAGS @EXPORT_OK @EXPORT $VERSION};
+=head1 Name
 
 $LIBNAME - $?desc?{$desc}{PUT A SHORT DESCRIPTION HERE!}
 
-=head1 VERSION
+=head1 Version
 
 Version 00.00_01
+=cut
+use version 0.77;
+$$VERSION = qv("00.00_01");
+# Originally created on $DATE
+=head1 Synopsis
 
-=head1 DESCRIPTION
+    use $LIBNAME;
+    # Put some sample code demonstrating the package's capabilities here.
 
-$?desc?{$desc}
+=head1 About $LIBNAME
 
-=head1 AUTHOR
 
-$AUTHOR
+=cut
+##########################################################################
+# BEGIN EXPORTING ($LIBNAME)
+##########################################################################
+=head1 Exported
 
-=head1 BUGS
+=cut
+require Exporter;
+#use AutoLoader qw(AUTOLOAD);    # Not always needed.
+push @ISA, 'Exporter';
 
-=over
+%EXPORT_TAGS = ( 'all' => [ qw( ) ] );      # Remove to save memory.
+@EXPORT_OK = ( @{ $$EXPORT_TAGS{'all'} } );  # Remove to save memory.
+@EXPORT = qw{};
+##########################################################################
+# END EXPORTING ($LIBNAME)
+##########################################################################
+##########################################################################
+# BEGIN IMPORTING ($LIBNAME)
+##########################################################################
+
+##########################################################################
+# END IMPORTING ($LIBNAME)
+##########################################################################
+##########################################################################
+# BEGIN PACKAGE VARS ($LIBNAME)
+##########################################################################
+
+##########################################################################
+# END PACKAGE VARS ($LIBNAME)
+##########################################################################
+##########################################################################
+# BEGIN INTERFACE ($LIBNAME)
+##########################################################################
+
+##########################################################################
+# END INTERFACE ($LIBNAME)
+##########################################################################
+##########################################################################
+# BEGIN SUPPORTING SUBROUTINES ($LIBNAME)
+##########################################################################
+
+##########################################################################
+# END SUPPORTING SUBROUTINES ($LIBNAME)
+##########################################################################
+return 1;
+##########################################################################
+# END PACKAGE ($LIBNAME)
+##########################################################################
+__END__
+
+=head1 Bugs
+
+=over 4
+
+No major bugs are known at this time.
 
 =back
 
-=head1 COPYRIGHT & LICENCE
+=head1 Author
 
-(c) $AUTHOR
+$AUTHOR
+
+=head1 Copyright & License
+
+Copyright (c) $(date +"%Y") $NAME
 !!
